@@ -1,0 +1,75 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(https://external-preview.redd.it/Ckw4BGHnSklfMnuCkuBKYKFtIDAoL23P19nugH6lRt4.jpg?auto=webp&s=140c996bedd7d859e7cbb0e9551a2b74cdf85f39) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+nav {
+  user-select: none;
+}
+nav .nav-item {
+  position: relative;
+  height: 72px;
+  width: 470px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav .nav-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+nav .nav-item:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: rgba(45, 62, 80, 0.15);
+}
+nav .nav-item:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #5c6e7a;
+  opacity: 0;
+  transition: ease opacity 500ms;
+}
+nav .nav-item:hover {
+  cursor: default;
+}
+nav .nav-item:hover:after {
+  opacity: 1;
+}
+nav .nav-item.size-xl {
+  height: 98px;
+  font-size: 32px;
+}
+nav .line-break {
+  height: 20px;
+}
